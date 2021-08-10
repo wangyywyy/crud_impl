@@ -11,6 +11,7 @@ public class C3P0Utils {
     private static ComboPooledDataSource ds;
 
     static {
+        // 获取特性名称的连接池，mysql连接池配置在c3p0-config.xml文件中
         ds = new ComboPooledDataSource("mysql");
     }
 
